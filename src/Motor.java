@@ -9,6 +9,10 @@ public class Motor {
         this.consumo = consumo;
     }
 
+    public void setConsumo(int consumo){
+        this.consumo = consumo;
+    }
+
     public int getConsumo() {
         return this.consumo;
     }

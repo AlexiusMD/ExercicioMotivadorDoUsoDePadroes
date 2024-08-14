@@ -22,10 +22,10 @@ public class Carro {
     public int abastece(TipoCombustivel tipoCombustivel, int quantidade) {
         int capacidadeLivre = tanque.getCapacidade() - tanque.getCombustivelDisponivel();
         if (capacidadeLivre < quantidade) {
-            tanque.abastece(tipoCombustivel, capacidadeLivre);
+            tanque.abastece(tipoCombustivel, capacidadeLivre, motor);
             return capacidadeLivre;
         } else {
-            tanque.abastece(tipoCombustivel, quantidade);
+            tanque.abastece(tipoCombustivel, quantidade, motor);
             return quantidade;
         }
     }
